@@ -1,0 +1,23 @@
+version: "3"
+services:
+
+  {{model_id}}_cpu:
+    image: {{repository_name}}:1
+    volumes:
+      - "${INPUT_DATA}:/tf/data/input"
+      - "${OUTPUT_DATA}:/tf/data/output"
+    environment:
+      - INPUT_DATA=/tf/data/input
+      - OUTPUT_DATA=/tf/data/output
+
+  {{model_id}}_gpu:
+    image: {{repository_name}}:1-gpu
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - INPUT_DATA=/tf/data/input
+      - OUTPUT_DATA=/tf/data/output
+    volumes:
+      - "${INPUT_DATA}:/tf/data/input"
+      - "${OUTPUT_DATA}:/tf/data/output"
+

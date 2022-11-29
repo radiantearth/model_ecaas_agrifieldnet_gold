@@ -1,0 +1,25 @@
+# Dockerfile for image tagged {{your_org_name}}/{{repository_name}}:1-gpu
+# {{ replace Docker recipe with actual code for model to run inferencing }}
+
+FROM tensorflow/tensorflow:2.8.2-gpu
+
+WORKDIR /tf
+
+COPY . .
+
+RUN apt-get update && \
+    # apt-get install -y --no-install-recommends \
+    #     gdal-bin \
+    #     libgdal-dev \
+    #     python3-opencv && \
+    mkdir -p \
+        data/input/images \
+        data/input/checkpoint \
+        data/output && \
+    pip install --upgrade pip && \
+    pip install -r requirements.txt && \
+    apt-get clean -y && \
+    apt-get autoremove -y && \
+    rm -rf /var/lib/apt/lists/*
+
+CMD ["/tf/run_model.sh"]
