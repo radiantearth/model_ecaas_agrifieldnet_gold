@@ -2,7 +2,7 @@
 
 First place solution for AgriFieldNet India Challenge Crop Types Detection from Satellite Imagery competition
 
-![{{model_ecaas_agrifieldnet_gold_v1}}](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/odk_sample_agricultural_dataset.png)
+![{{model_ecaas_agrifieldnet_gold_v1}}](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
 
 MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](https://mlhub.earth/model/{{model_id}}).
 
@@ -69,8 +69,8 @@ docker build -t radiantearth/model_ecaas_agrifieldnet_gold:1 -f Dockerfile .
 
     ```bash
     # change paths to your actual input and output folders
-    export INPUT_DATA="/home/my_user/{{repository_name}}/data/input/"
-    export OUTPUT_DATA="/home/my_user/{{repository_name}}/data/output/"
+    export INPUT_DATA="/home/my_user/model_ecaas_agrifieldnet_gold/data/input/"
+    export OUTPUT_DATA="/home/my_user/model_ecaas_agrifieldnet_gold/data/output/"
     ```
 
 3. Run the appropriate Docker Compose command for your system
