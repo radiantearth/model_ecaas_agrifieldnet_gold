@@ -64,7 +64,7 @@ this model for new inferencing.
 ### Training
 
 For the features engineering, we used bands
-("B01","B02","B03","B04","B05","B06","B07","B08","B09","B11", "B12") and also
+`("B01","B02","B03","B04","B05","B06","B07","B08","B09","B11", "B12")` and also
 calculated a few derived bands using well known formulae.
 
 The following are the derived indicies:  
@@ -84,7 +84,7 @@ The following are the derived indicies:
 - NPCRI : `(B03 - B08) / (B03 + B08)`
 
 Then we took median and max of the above features. We also calculated the total
-area perentage of a given field using library
+area percentage of a given field using library
 [FIELDimageR](https://github.com/OpenDroneMap/FIELDimageR), along with other
 features like the field tile count, field overlap count, field tile size, field
 tile height, field tile width.
@@ -99,3 +99,12 @@ Each of the models will generate an output file (in csv). If a model is named
 `single-model-agrifield.ext`, its corresponding output file will be
 `single-model-agrifield.csv`. The final output file (`submission.csv`) is a
 weighted geometric mean of all the intermediate output files.
+
+## Winning Solution from AgrifieldNet India Challenge
+
+The original solution code is archived in the file:
+[first-place-agrifieldnet-solution.zip](first-place-agrifieldnet-solution.zip).
+Please note: this repository uses [Git Large File Support
+(LFS)](https://git-lfs.github.com/) to include this .zip file. Either install
+git lfs support for your git client, use the official Mac or Windows GitHub
+client to clone this repository.
