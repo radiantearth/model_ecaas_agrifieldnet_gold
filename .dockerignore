@@ -2,6 +2,9 @@
 data/input
 data/output
 
+# don't add files from git-lfs
+docs/*.zip
+
 **/__pycache__
 **/.classpath
 **/.dockerignore
