@@ -2,7 +2,7 @@
 
 First place solution for AgriFieldNet India Challenge Crop Types Detection from Satellite Imagery competition
 
-![{{model_ecaas_agrifieldnet_gold_v1}}](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
+![model_ecaas_agrifieldnet_gold_v1](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
 
 MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](https://mlhub.earth/model/model_ecaas_agrifieldnet_gold_v1).
 
@@ -14,8 +14,8 @@ and other details in the [model documentation](/docs/index.md).
 ## System Requirements
 
 * Git client
-* [Docker](https://www.docker.com/) with
-    [Compose](https://docs.docker.com/compose/) v1.28 or newer.
+* Python 3.8
+* R 4.2.2
 
 ## Hardware Requirements
 

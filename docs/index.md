@@ -10,7 +10,7 @@ agricultural fields across Northern India using multispectral observations from
 Sentinel-2 satellite. These fields are located in various districts in states
 of Uttar Pradesh, Rajasthan, Odisha and Bihar.
 
-![{{model_ecaas_agrifieldnet_gold_v1}}](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
+![model_ecaas_agrifieldnet_gold_v1](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
 
 MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](https://mlhub.earth/model/model_ecaas_agrifieldnet_gold_v1).
 
