@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Generate data
 Rscript model_ecaas_agrifieldnet_gold/r-generate-data.R

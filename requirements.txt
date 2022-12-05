@@ -1,6 +1,7 @@
-catboost==1.1
-xgboost==1.6.2
-scikit-learn==1.0.2
-rasterio==1.2.0
-radiant_mlhub==0.4.1
 accelerate==0.14.0
+catboost==1.1
+radiant_mlhub==0.4.1
+rasterio==1.2.0
+scikit-learn==1.0.2
+torchvision
+xgboost==1.6.2

@@ -26,28 +26,36 @@ and other details in the [model documentation](/docs/index.md).
 
 ## Get Started With Inferencing
 
-First clone this Git repository.
+Start by cloning this repository to get the model scripts and saved model
+checkpoint files:
 
 ```bash
 git clone https://github.com/radiantearth/model_ecaas_agrifieldnet_gold.git
 cd model_ecaas_agrifieldnet_gold/
 ```
 
-After cloning the model repository, you can use the Docker Compose runtime
-files as described below.
+To get started, the R and Python dependencies must to be installed locally in
+your environment. Alternatively you can look at the original AgriFieldNet
+Challenge solution scripts (.zip) which are linked in the [model
+documentation](./docs/index.md).
 
-## Pull or Build the Docker Image
+### R and packages
 
-Pull pre-built image from Docker Hub (recommended):
+[R 4.2.2](https://www.r-project.org/) is required for the data preprocessing and
+feature engineering step of the model.
 
 ```bash
-docker pull docker.io/radiantearth/model_ecaas_agrifieldnet_gold:1
+R -e "install.packages(c('devtools', 'plyr', 'tidyverse', 'raster', 'celestial', 'caret', 'fastICA', 'SOAR', 'RStoolbox', 'jsonlite', 'data.table', 'spdep'))"
+R -e "devtools::install_github('OpenDroneMap/FIELDimageR')"
 ```
 
-Or build image from source:
+### Python and packages
+
+[Python 3.8](https://www.python.org/) is required for the model training and inferencing steps.
 
 ```bash
-docker build -t radiantearth/model_ecaas_agrifieldnet_gold:1 -f Dockerfile .
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
 ## Run Model to Generate New Inferences
@@ -73,14 +81,16 @@ docker build -t radiantearth/model_ecaas_agrifieldnet_gold:1 -f Dockerfile .
     export OUTPUT_DATA="/home/my_user/model_ecaas_agrifieldnet_gold/data/output/"
     ```
 
-3. Run the appropriate Docker Compose command for your system
+3. Run the `run_models.sh` bash shell script.
 
     ```bash
-    docker compose up model_ecaas_agrifieldnet_gold_v1
+    ./run_models.sh
     ```
 
-4. Wait for the `docker compose` to finish running, then inspect the
-`OUTPUT_DATA` folder for results.
+4. Wait for the script to finish running, then inspect the `OUTPUT_DATA` folder
+for results. If you run into errors, or missing packages, alternatively you can look at the
+original AgriFieldNet Challenge solution scripts (.zip) which are linked in the
+[model documentation](./docs/index.md).
 
 ## Understanding Output Data
 
