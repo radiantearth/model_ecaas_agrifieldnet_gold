@@ -19,6 +19,91 @@ MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](ht
 - [Training Data Source](https://api.radiant.earth/mlhub/v1/collections/ref_agrifieldnet_competition_v1_source)
 - [Training Data Labels](https://api.radiant.earth/mlhub/v1/collections/ref_agrifieldnet_competition_v1_labels_train)
 
+## Related MLHub Dataset
+
+[AgriFieldNet Competition Dataset](https://mlhub.earth/data/ref_agrifieldnet_competition_v1)
+
+## Citation
+
+Muhamed T, Emelikem C, Ogundare T, AgriFieldNet Model for Crop Detection from
+Satellite Imagery, Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub
+<https://doi.org/10.34911/rdnt.k2ft4a>
+
+## License
+
+[CC-BY-4.0](../LICENSE)
+
+## Creators
+
+- Muhamed Tuo
+- Caleb Emelike
+- Taiwo Ogundare
+
+## Contact
+
+Muhamed Tuo [tuomuhamed@gmail.com](mailto:tuomuhamed@gmail.com)
+
+## Applicable Spatial Extent
+
+The applicable spatial extent, for new inferencing.
+
+```geojson
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "properties": {
+                "id": "ref_agrifieldnet_competition_v1"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "bbox": [
+                    76.2448,
+                    18.9414,
+                    88.046,
+                    28.327
+                ],
+                "coordinates": [
+                    [
+                        [
+                            [
+                                88.046,
+                                18.9414
+                            ],
+                            [
+                                88.046,
+                                28.327
+                            ],
+                            [
+                                76.2448,
+                                28.327
+                            ],
+                            [
+                                76.2448,
+                                18.9414
+                            ],
+                            [
+                                88.046,
+                                18.9414
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}
+```
+
+## Applicable Temporal Extent
+
+The recommended start/end date of imagery for new inferencing.
+
+| Start | End |
+|-------|-----|
+| 2022-01-01 | present |
+
 ## Learning Approach
 
 - Supervised
@@ -58,8 +143,6 @@ Models trained on GPU:
 
 Review the [GitHub repository README](../README.md) to get started running
 this model for new inferencing.
-
-## Methodology
 
 ### Training
 

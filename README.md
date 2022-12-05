@@ -4,7 +4,7 @@ First place solution for AgriFieldNet India Challenge Crop Types Detection from 
 
 ![{{model_ecaas_agrifieldnet_gold_v1}}](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
 
-MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](https://mlhub.earth/model/{{model_id}}).
+MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](https://mlhub.earth/model/model_ecaas_agrifieldnet_gold_v1).
 
 ## ML Model Documentation
 
