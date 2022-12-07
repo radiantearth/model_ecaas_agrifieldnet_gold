@@ -1,230 +1,193 @@
-# {{ Model Name (one line) }}
+# AgriFieldNet Model for Crop Detection from Satellite Imagery
 
-{{ Model Description (paragraph) }}
+Small farms produce about 35% of the world’s food, and are mostly found in low-
+and middle-income countries. Reliable information about these farms is limited,
+making support and policy-making difficult. Earth Observation data from
+satellites such as Sentinel-2, in combination with machine learning, can help
+improve agricultural monitoring, crop mapping, and disaster risk management for
+these small farms. The Main goal of this challenge is to classify crop types in
+agricultural fields across Northern India using multispectral observations from
+Sentinel-2 satellite. These fields are located in various districts in states
+of Uttar Pradesh, Rajasthan, Odisha and Bihar.
 
-![{{model_id}}](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/odk_sample_agricultural_dataset.png)
+![model_ecaas_agrifieldnet_gold_v1](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
 
-MLHub model id: `{{model_id}}`. Browse on [Radiant MLHub](https://mlhub.earth/model/{{model_id}}).
+MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](https://mlhub.earth/model/model_ecaas_agrifieldnet_gold_v1).
 
 ## Training Data
 
-{{
+- [Training Data Source](https://api.radiant.earth/mlhub/v1/collections/ref_agrifieldnet_competition_v1_source)
+- [Training Data Labels](https://api.radiant.earth/mlhub/v1/collections/ref_agrifieldnet_competition_v1_labels_train)
 
-Provide links to the training data for this model. There should be separate
-links for source and labels collections as the following example. Make sure to
-include `Source` and `Labels` in the corresponding names of each collection.
+## Related MLHub Dataset
 
-
-Example using MLHub training data:
-
-- [Training Data Source](https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_02_source)
-- [Training Data Labels](https://api.radiant.earth/mlhub/v1/collections/ref_african_crops_kenya_02_labels)
-
-}}
-
-## Related MLHub Dataset {{ (Optional) }}
-
-{{
-
-If this model was based on a dataset which is already published to MLHub, enter that link here.
-
-[https://mlhub.earth/data/ref_african_crops_kenya_02](https://mlhub.earth/data/ref_african_crops_kenya_02)
-
-}}
+[AgriFieldNet Competition Dataset](https://mlhub.earth/data/ref_agrifieldnet_competition_v1)
 
 ## Citation
 
-{{
-
-example:
-
-Amer, K. (2022) “A Spatio-Temporal Deep Learning-Based Crop Classification
-Model for Satellite Imagery”, Version 1.0, Radiant MLHub. [Date Accessed]
-Radiant MLHub. <https://doi.org/10.34911/rdnt.h28fju>
-
-}}
+Muhamed T, Emelikem C, Ogundare T, AgriFieldNet Model for Crop Detection from
+Satellite Imagery, Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub
+<https://doi.org/10.34911/rdnt.k2ft4a>
 
 ## License
 
-{{
+[CC-BY-4.0](../LICENSE)
 
-example: CC-BY-4.0
+## Creators
 
-(update the LICENSE file in this repository to match the license)
-
-}}
-
-## Creator{{s}}
-
-{{
-
-example: Model creators and links go here (examples: Radiant Earth Foundation, Microsoft
-AI for Good Research Lab).
-
-}}
+- Muhamed Tuo
+- Caleb Emelike
+- Taiwo Ogundare
 
 ## Contact
 
-{{
-
-Contact email goes here (example: ml@radiant.earth)
-
-}}
+Muhamed Tuo [tuomuhamed@gmail.com](mailto:tuomuhamed@gmail.com)
 
 ## Applicable Spatial Extent
 
-{{
-
-Here please provide the applicable spatial extent, for new inferencing (this
-may be the same, or different than the spatial extent of the training data).
-Please provide the spatial extent bounding box as WKT text or GEOJSON text.
+The applicable spatial extent, for new inferencing.
 
 ```geojson
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "id": 1,
-      "properties": {
-        "ID": 0
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-              [-90,35],
-              [-90,30],
-              [-85,30],
-              [-85,35],
-              [-90,35]
-          ]
-        ]
-      }
-    }
-  ]
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "properties": {
+                "id": "ref_agrifieldnet_competition_v1"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "bbox": [
+                    76.2448,
+                    18.9414,
+                    88.046,
+                    28.327
+                ],
+                "coordinates": [
+                    [
+                        [
+                            [
+                                88.046,
+                                18.9414
+                            ],
+                            [
+                                88.046,
+                                28.327
+                            ],
+                            [
+                                76.2448,
+                                28.327
+                            ],
+                            [
+                                76.2448,
+                                18.9414
+                            ],
+                            [
+                                88.046,
+                                18.9414
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
 }
 ```
 
-<https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-geojson-and-topojson-maps>
-
-}}
-
 ## Applicable Temporal Extent
 
-{{
-
-The recommended start/end date of imagery for new inferencing. Example:
+The recommended start/end date of imagery for new inferencing.
 
 | Start | End |
 |-------|-----|
-| 2000-01-01 | present |
-
-}}
+| 2022-01-01 | present |
 
 ## Learning Approach
 
-{{
-
-The learning approach used to train the model. It is recommended that you use
-one of the values below, but other values are allowed.
-
 - Supervised
-- Unsupervised
-- Semi-supervised
-- Reinforcement-learning
-- Other (explain)
-
-}}
 
 ## Prediction Type
 
-{{
-
-The type of prediction that the model makes. It is recommended that you use one
-of the values below, but other values are allowed.
-
-- Object-detection
 - Classification
-- Segmentation
-- Regression
-- Other (explain)
 
-}}
+## Models Architecture
 
-## Model Architecture
-
-{{
-
-Identifies the architecture employed by the model. This may include any string
-identifiers, but publishers are encouraged to use well-known identifiers
-whenever possible. More details than just “it’s a CNN”!
-
-}}
+- Gradient Boosting (Catboost, Lightgbm, Xgboost)
+- Unet
 
 ## Training Operating System
 
-{{
-
-Identifies the operating system on which the model was trained.
-
 - Linux
-- Windows (win32)
-- Windows (cygwin)
-- MacOS (darwin)
-- Other (explain)
-
-}}
 
 ## Training Processor Type
 
-{{
+Both CPU and GPU.
 
-The type of processor used during training. Must be one of "cpu" or "gpu".
+Models trained on CPU:
 
-- cpu
-- gpu
+- single-catboost
+- single-xgboost
+- crossval-catboost (40 cores TPU)
+- pixelwise-lightgbm (40 cores TPU)
 
-}}
+Models trained on GPU:
+
+- R-model-catboost
+- pixelwise-catboost
+- fieldwise-catboost
+- pixelwise-unet
 
 ## Model Inferencing
 
 Review the [GitHub repository README](../README.md) to get started running
 this model for new inferencing.
 
-## Methodology
-
-{{
-
-Use this section to provide more information to the reader about the model. Be
-as descriptive as possible. The suggested sub-sections are as following:
-
-}}
-
 ### Training
 
-{{
+For the features engineering, we used bands
+`("B01","B02","B03","B04","B05","B06","B07","B08","B09","B11", "B12")` and also
+calculated a few derived bands using well known formulae.
 
-Explain training steps such as augmentations and preprocessing used on image
-before training.
+The following are the derived indicies:  
 
-}}
+- NDVI (Normalized Grren Red Difference Index) : `(B08 - B04)/ (B08 + B04)`
+- GLI (Green Leaf Index) : `(2 * B03 - B04 - B02)/(2 * B03 + B04 + B02)`
+- CVI : (Chlorphyll Vegetation Index) : `(B08 / B03) * (B04 / B03)`
+- SIPI : `(B08 - B02) / (B08 - B04)`
+- S2REP : `705 + 35 * (((( B07 + B04 ) / 2) - B05 ) / (B06 - B05))`
+- CCCI : `((B08 - B05) / (B08 + B05)) / ((B08 - B04) / (B08 + B04))`
+- HUE (Overall Hue Index) : `atan( 2 * ( B02 - B03 - B04 ) / 30.5 * ( B03 - B04 ))`
+- RENDVI : `(B06 - B05) / (B06 + B05)`
+- RECI `(Chlorophyll Index) : ( B08 / B04 ) - 1`
+- EVI (Enchanced Vegetation Index) : `(2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0))`
+- EVI2 (Enchanced Vegetation Index 2) : `(2.4 * (B08 - B04) / (B08 + B04 + 1.0))`
+- NDWI : `(B04 - B02) / (B04 + B02)`
+- NPCRI : `(B03 - B08) / (B03 + B08)`
+
+Then we took median and max of the above features. We also calculated the total
+area percentage of a given field using library
+[FIELDimageR](https://github.com/OpenDroneMap/FIELDimageR), along with other
+features like the field tile count, field overlap count, field tile size, field
+tile height, field tile width.
 
 ### Model
 
-{{
-
-Explain the model and why you chose the model in this section. A graphical representation
-of the model architecture could be helpful to individuals or organizations who would
-wish to replicate the workflow and reproduce the model results or to change the model
-architecture and improve the results.
-
-}}
+It consist of 1 Unet + 8 Gradient Boosting Trees.
 
 ### Structure of Output Data
 
-{{
+Each of the models will generate an output file (in csv). If a model is named
+`single-model-agrifield.ext`, its corresponding output file will be
+`single-model-agrifield.csv`. The final output file (`submission.csv`) is a
+weighted geometric mean of all the intermediate output files.
 
-Explain output file names and formats, interpretation, classes, etc.
+## Winning Solution from AgrifieldNet India Challenge
 
-}}
+The original solution code is archived in the file:
+[first-place-agrifieldnet-solution.zip](first-place-agrifieldnet-solution.zip).
+Please note: this repository uses [Git Large File Support
+(LFS)](https://git-lfs.github.com/) to include this .zip file. Either install
+git lfs support for your git client, use the official Mac or Windows GitHub
+client to clone this repository.

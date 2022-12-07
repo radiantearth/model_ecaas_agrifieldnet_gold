@@ -1,18 +1,17 @@
-#!/usr/bin/env bash
+#!/bin/bash -e
 
-set -e
+# Generate data
+Rscript model_ecaas_agrifieldnet_gold/r-generate-data.R
 
-if [[ -z "${INPUT_DATA}" ]]; then
-    echo "INPUT_DATA environment variable is not defined"
-    exit 1
-fi
+# Inference
+python model_ecaas_agrifieldnet_gold/r-catboost-inference.py
+python model_ecaas_agrifieldnet_gold/single-catboost-inference.py
+python model_ecaas_agrifieldnet_gold/single-xgboost-inference.py
+python model_ecaas_agrifieldnet_gold/crossval-catboost-inference.py
+python model_ecaas_agrifieldnet_gold/pixelwise-catboost-inference.py
+python model_ecaas_agrifieldnet_gold/pixelwise-lightgbm-inference.py
+python model_ecaas_agrifieldnet_gold/fieldwise-catboost-inference.py
+python model_ecaas_agrifieldnet_gold/pixelwise-unet-inference.py
 
-if [[ -z "${OUTPUT_DATA}" ]]; then
-    echo "OUTPUT_DATA environment variable is not defined"
-    exit 1
-fi
-
-python {{repository_name}}/main_inferencing.py \
-    --model_dir=${INPUT_DATA}/checkpoint \
-    --chips_dir=${INPUT_DATA}/chips \
-    --output_dir=${OUTPUT_DATA}
+# Blend and create final submission file
+python model_ecaas_agrifieldnet_gold/blending.py

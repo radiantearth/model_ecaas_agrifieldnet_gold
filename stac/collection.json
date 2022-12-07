@@ -1,0 +1,71 @@
+{
+  "id": "model_ecaas_agrifieldnet_gold_v1",
+  "type": "Collection",
+  "links": [
+    {
+      "rel": "items",
+      "type": "application/geo+json",
+      "href": "https://api.radiant.earth/mlhub/v1/collections/model_ecaas_agrifieldnet_gold_v1/items"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://api.radiant.earth/mlhub/v1/"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://api.radiant.earth/mlhub/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/json",
+      "href": "https://api.radiant.earth/mlhub/v1/collections/model_ecaas_agrifieldnet_gold_v1"
+    }
+  ],
+  "title": "AgriFieldNet Model for Crop Detection from Satellite Imagery",
+  "assets": {
+    "documentation": {
+      "href": "https://github.com/radiantearth/model_ecaas_agrifieldnet_gold_v1/blob/v1/docs/index.md",
+      "type": "text/markdown",
+      "roles": [
+        "documentation"
+      ],
+      "title": "ML Model Documentation",
+      "description": "Documentation"
+    }
+  },
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          76.2448,
+          18.9414,
+          88.0460,
+          28.3270
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2022-01-01T00:00:00Z",
+          "9999-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "summaries": {
+    "ml-model:architecture": ["unet", "gradient-boosting"],
+    "ml-model:learning_approach": ["supervised"],
+    "ml-model:prediction_type": ["classification"],
+    "ml-model:training-os": ["linux"],
+    "ml-model:training-processor-type": ["gpu", "cpu"]
+  },
+  "description": "Small farms produce about 35% of the world's food, and are mostly found in low-and middle-income countries. Reliable information about these farms is limited, making support and policy-making difficult. Earth Observation data from satellites such as Sentinel-2, in combination with machine learning, can help improve agricultural monitoring, crop mapping, and disaster risk management for these small farms. The Main goal of this challenge is to classify crop types in agricultural fields across Northern India using multispectral observations from Sentinel-2 satellite. These fields are located in various districts in states of Uttar Pradesh, Rajasthan, Odisha and Bihar.",
+  "stac_version": "1.0.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/ml-model/v1.0.0/schema.json"
+  ]
+}
