@@ -92,6 +92,7 @@
     "providers": [
       {
         "email": "tuomuhamed@gmail.com",
+        "url": "https://www.linkedin.com/in/muhamed-tuo-b1b3a0162/",
         "name": "Muhamed Tuo",
         "roles": [
           "producer"
@@ -99,6 +100,7 @@
       },
       {
         "email": "caleb.emelike@gmail.com",
+        "url": "https://www.linkedin.com/in/caleb-emelike-6a040219a/",
         "name": "Caleb Emelike",
         "roles": [
           "producer"
@@ -106,6 +108,7 @@
       },
       {
         "email": "taiwoogundare6@gmail.com",
+        "url": "https://www.linkedin.com/in/taiwo-ogundare/",
         "name": "Taiwo Ogundare",
         "roles": [
           "producer"

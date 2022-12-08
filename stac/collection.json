@@ -26,7 +26,7 @@
   "title": "AgriFieldNet Model for Crop Detection from Satellite Imagery",
   "assets": {
     "documentation": {
-      "href": "https://github.com/radiantearth/model_ecaas_agrifieldnet_gold_v1/blob/v1/docs/index.md",
+      "href": "https://github.com/radiantearth/model_ecaas_agrifieldnet_gold/blob/v1/docs/index.md",
       "type": "text/markdown",
       "roles": [
         "documentation"
