@@ -25,8 +25,8 @@ MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](ht
 
 ## Citation
 
-Muhamed T, Emelikem C, Ogundare T, AgriFieldNet Model for Crop Detection from
-Satellite Imagery, Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub
+Muhamed T, Emelikem C, Ogundare T, "AgriFieldNet Model for Crop Detection from
+Satellite Imagery", Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub
 <https://doi.org/10.34911/rdnt.k2ft4a>
 
 ## License
@@ -35,9 +35,9 @@ Satellite Imagery, Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub
 
 ## Creators
 
-- Muhamed Tuo
-- Caleb Emelike
-- Taiwo Ogundare
+- [Muhamed Tuo](https://www.linkedin.com/in/muhamed-tuo-b1b3a0162/)
+- [Caleb Emelike](https://www.linkedin.com/in/caleb-emelike-6a040219a/)
+- [Taiwo Ogundare](https://www.linkedin.com/in/taiwo-ogundare/)
 
 ## Contact
 
