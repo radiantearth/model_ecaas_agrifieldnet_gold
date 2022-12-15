@@ -25,7 +25,7 @@ MLHub model id: `model_ecaas_agrifieldnet_gold_v1`. Browse on [Radiant MLHub](ht
 
 ## Citation
 
-Muhamed T, Emelikem C, Ogundare T, "AgriFieldNet Model for Crop Detection from
+Muhamed T, Emelike C, Ogundare T, "AgriFieldNet Model for Crop Detection from
 Satellite Imagery", Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub
 <https://doi.org/10.34911/rdnt.k2ft4a>
 

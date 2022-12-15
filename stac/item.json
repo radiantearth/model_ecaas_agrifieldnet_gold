@@ -116,7 +116,7 @@
       }
     ],
     "description": "Small farms produce about 35% of the worldʼs food, and are mostly found in low-and middle-income countries. Reliable information about these farms is limited, making support and policy-making difficult. Earth Observation data from satellites such as Sentinel-2, in combination with machine learning, can help improve agricultural monitoring, crop mapping, and disaster risk management for these small farms. The Main goal of this challenge is to classify crop types in agricultural fields across Northern India using multispectral observations from Sentinel-2 satellite. These fields are located in various districts in states of Uttar Pradesh, Rajasthan, Odisha and Bihar.",
-    "sci:citation": "Muhamed T, Emelikem C, Ogundare T, \"AgriFieldNet Model for Crop Detection from Satellite Imagery\", Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub <https://doi.org/10.34911/rdnt.k2ft4a>",
+    "sci:citation": "Muhamed T, Emelike C, Ogundare T, \"AgriFieldNet Model for Crop Detection from Satellite Imagery\", Version 1.0, Radiant MLHub. [Date Accessed] Radiant MLHub <https://doi.org/10.34911/rdnt.k2ft4a>",
     "ml-model:type": "ml-model",
     "start_datetime": "2022-01-01T00:00:00Z",
     "end_datetime": "9999-12-31T23:59:59Z",
