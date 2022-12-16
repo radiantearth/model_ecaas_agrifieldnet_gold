@@ -150,19 +150,19 @@ For the features engineering, we used bands
 `("B01","B02","B03","B04","B05","B06","B07","B08","B09","B11", "B12")` and also
 calculated a few derived bands using well known formulae.
 
-The following are the derived indicies:  
+The following are the derived indices:  
 
-- NDVI (Normalized Grren Red Difference Index) : `(B08 - B04)/ (B08 + B04)`
+- NDVI (Normalized Green Red Difference Index) : `(B08 - B04)/ (B08 + B04)`
 - GLI (Green Leaf Index) : `(2 * B03 - B04 - B02)/(2 * B03 + B04 + B02)`
-- CVI : (Chlorphyll Vegetation Index) : `(B08 / B03) * (B04 / B03)`
+- CVI : (Chlorophyll Vegetation Index) : `(B08 / B03) * (B04 / B03)`
 - SIPI : `(B08 - B02) / (B08 - B04)`
 - S2REP : `705 + 35 * (((( B07 + B04 ) / 2) - B05 ) / (B06 - B05))`
 - CCCI : `((B08 - B05) / (B08 + B05)) / ((B08 - B04) / (B08 + B04))`
 - HUE (Overall Hue Index) : `atan( 2 * ( B02 - B03 - B04 ) / 30.5 * ( B03 - B04 ))`
 - RENDVI : `(B06 - B05) / (B06 + B05)`
 - RECI `(Chlorophyll Index) : ( B08 / B04 ) - 1`
-- EVI (Enchanced Vegetation Index) : `(2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0))`
-- EVI2 (Enchanced Vegetation Index 2) : `(2.4 * (B08 - B04) / (B08 + B04 + 1.0))`
+- EVI (Enhanced Vegetation Index) : `(2.5 * (B08 - B04) / ((B08 + 6.0 * B04 - 7.5 * B02) + 1.0))`
+- EVI2 (Enhanced Vegetation Index 2) : `(2.4 * (B08 - B04) / (B08 + B04 + 1.0))`
 - NDWI : `(B04 - B02) / (B04 + B02)`
 - NPCRI : `(B03 - B08) / (B03 + B08)`
 
