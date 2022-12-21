@@ -1,7 +1,7 @@
 # AgriFieldNet Model for Crop Types Detection
 
 First place solution of the
-of the [Zindi AgriFieldNet India Challenge](https://zindi.africa/competitions/agrifieldnet-india-challenge).
+of the [Zindi AgriFieldNet India Challenge](https://zindi.africa/competitions/agrifieldnet-india-challenge)
 for Crop Types Detection from Satellite Imagery.
 
 ![model_ecaas_agrifieldnet_gold_v1](https://radiantmlhub.blob.core.windows.net/frontend-dataset-images/ref_agrifieldnet_competition_v1.png)
