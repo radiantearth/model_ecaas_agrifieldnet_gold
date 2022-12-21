@@ -1,5 +1,7 @@
 # AgriFieldNet Model for Crop Detection from Satellite Imagery
 
+First place solution of the [Zindi AgriFieldNet India Challenge](https://zindi.africa/competitions/agrifieldnet-india-challenge).
+
 Small farms produce about 35% of the world’s food, and are mostly found in low-
 and middle-income countries. Reliable information about these farms is limited,
 making support and policy-making difficult. Earth Observation data from
